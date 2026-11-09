@@ -10,7 +10,7 @@ export default function PayPage() {
   const navigate = useNavigate()
   const method = useMemo(() => new URLSearchParams(search).get('method') || 'mpesa', [search])
   const { getBooking, markBookingPaid } = useBooking() 
-YU7  const booking = getBooking(Number(id))
+  const booking = getBooking(Number(id))
 
   const [showConfirm, setShowConfirm] = useState(false)
   const [processing, setProcessing] = useState(false)
